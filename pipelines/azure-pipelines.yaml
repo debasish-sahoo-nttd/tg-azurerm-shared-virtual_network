@@ -38,6 +38,7 @@ stages:
           environmentNumber: "000"
           azureEnvironment: tg-vnet-qa-eastus-000
           serviceConnection: $(service_connection_qa)
+          # User needs to check the terragrunt.yaml@utils repo to find out how the stages are named to be passed in dependsOn
           dependsOn:
             - sandbox_eastus_000_deploy
         - environment: uat
