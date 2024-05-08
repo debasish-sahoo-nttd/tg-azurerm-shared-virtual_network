@@ -35,10 +35,15 @@ stages:
                   pluginVersion: 4.43.1
               - task: Bash@3
                 displayName: 'Verify Environment'
+                env:
+                  MAIN_REPO: $(Build.Repository.Name)
+                  MAIN_REPO_PATH: $(Build.Repository.LocalPath)
                 inputs:
                   targetType: 'inline'
                   script: |
                     set -x
+                    echo "MAIN_REPO: $MAIN_REPO"
+                    echo "MAIN_REPO_PATH: $MAIN_REPO_PATH"
                     echo "Present Working directory: $(pwd)"  
                     ls -ltr
                     echo -e "printing env\n"
