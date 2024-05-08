@@ -17,6 +17,10 @@ variables:
   utils_type: $[ resources.repositories.utils.type ]
   utils_url: $[ resources.repositories.utils.url ]
   utils_version: $[ resources.repositories.utils.version ]
+  service_connection_dev: "ado-sp"
+  service_connection_qa: "ado-sp"
+  service_connection_prod: "ado-sp"
+  service_connection_sandbox: "ado-sp"
 
 parameters:
   - name: serviceConnection
@@ -33,6 +37,7 @@ stages:
           region: eastus
           environmentNumber: "000"
           azureEnvironment: tg-vnet-sandbox-eastus-000
+          serviceConnection: $(service_connection_sandbox)
         # - environment: sandbox
         #   region: eastus
         #   environmentNumber: "001"
