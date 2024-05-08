@@ -50,6 +50,6 @@ stages:
         #     - uat_eastus_000_deploy
       subscription: ${{ parameters.serviceConnection }}
       pool: 'container-pool'
-      checkoutSteps:
+      repoCheckoutSteps:
         - checkout: self
         - checkout: utils
