@@ -14,7 +14,7 @@ variables:
   # This is how you set variables for the repositories
   utils_name: $[ resources.repositories.utils.name ]
   # Variables for service connection. You cannot dynamically set them in tasks
-  service_connection_dev: "ado-sp"
+  service_connection_uat: "ado-sp"
   service_connection_qa: "ado-sp"
   service_connection_prod: "ado-sp"
   service_connection_sandbox: "ado-sp"
