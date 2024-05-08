@@ -62,7 +62,7 @@ stages:
               - task: AzureCLI@2
                 displayName: 'Terragrunt Init and Plan'
                 inputs:
-                  azureSubscription: ${{parameters.subscription}}
+                  azureSubscription: $(serviceConnection)
                   scriptType: 'bash'
                   scriptLocation: 'inlineScript'
                   addSpnToEnvironment: true
