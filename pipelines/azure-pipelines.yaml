@@ -24,28 +24,28 @@ stages:
         - environment: sandbox
           region: eastus
           environmentNumber: "000"
-          azureEnvironment: tg-rg-sandbox-eastus-000
+          azureEnvironment: tg-vnet-sandbox-eastus-000
         # - environment: sandbox
         #   region: eastus
         #   environmentNumber: "001"
-        #   azureEnvironment: tg-rg-sandbox-eastus-001
+        #   azureEnvironment: tg-vnet-sandbox-eastus-001
         # - environment: qa
         #   region: eastus
         #   environmentNumber: "000"
-        #   azureEnvironment: tg-rg-qa-eastus-000
+        #   azureEnvironment: tg-vnet-qa-eastus-000
         #   dependsOn:
         #     - sandbox_eastus_000_deploy
         #     - sandbox_eastus_001_deploy
         # - environment: uat
         #   region: eastus
         #   environmentNumber: "000"
-        #   azureEnvironment: tg-rg-uat-eastus-000
+        #   azureEnvironment: tg-vnet-uat-eastus-000
         #   dependsOn:
         #     - qa_eastus_000_deploy
         # - environment: prod
         #   region: eastus
         #   environmentNumber: "000"
-        #   azureEnvironment: tg-rg-prod-eastus-000
+        #   azureEnvironment: tg-vnet-prod-eastus-000
         #   dependsOn:
         #     - uat_eastus_000_deploy
       subscription: ${{ parameters.serviceConnection }}
