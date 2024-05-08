@@ -46,7 +46,6 @@ generate "versions" {
           prevent_deletion_if_contains_resources = false
         }
       }
-      subscription_id = "${local.subscription_id}"
     }
 EOF
 }
