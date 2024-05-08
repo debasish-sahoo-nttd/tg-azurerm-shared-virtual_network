@@ -44,6 +44,9 @@ stages:
                     set -x
                     echo "MAIN_REPO: $MAIN_REPO"
                     echo "MAIN_REPO_PATH: $MAIN_REPO_PATH"
+                    echo "Utils Name: $(utils_name)"
+                    echo "Utils ID: $(utils_id)"
+                    echo "Utils Ref: $(utils_ref)"
                     echo "Present Working directory: $(pwd)"  
                     ls -ltr
                     echo -e "printing env\n"

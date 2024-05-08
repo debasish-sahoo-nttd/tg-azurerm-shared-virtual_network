@@ -10,6 +10,14 @@ resources:
       ref: feature/1456
       endpoint: 'launchbynttdata-github-token'
 
+variables:
+  utils_ref: $[ resources.repositories.utils.ref ]
+  utils_name: $[ resources.repositories.utils.name ]
+  utils_id: $[ resources.repositories.utils.id ]
+  utils_type: $[ resources.repositories.utils.type ]
+  utils_url: $[ resources.repositories.utils.url ]
+  utils_version: $[ resources.repositories.utils.version ]
+
 parameters:
   - name: serviceConnection
     type: string
@@ -52,4 +60,6 @@ stages:
       pool: 'container-pool'
       repoCheckoutSteps:
         - checkout: self
+          path: main
         - checkout: utils
+          path: utils
