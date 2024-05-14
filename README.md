@@ -104,7 +104,7 @@ terragrunt apply -auto-approve
 
 # ADO pipeline
 
-The ADO pipeline is located at `pipelines/azure-pipelines.yaml`. Currently the trigger is disabled, so the user has to manually run the pipeline after every PR is merged to `main`. When the trigger is enabled, the pipeline will run automatically after every PR is merged to `main`. 
+The ADO pipeline is located at `pipelines/azure-pipelines.yaml`. Currently the trigger is disabled, so the user has to manually run the pipeline after every PR is merged to `main`. When the trigger is enabled, the pipeline will run automatically after every PR is merged to `main`.
 
 Trigger can be enabled by adding the below line
 

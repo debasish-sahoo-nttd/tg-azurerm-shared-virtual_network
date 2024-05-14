@@ -17,22 +17,22 @@ subnet_delegation        = {}
 subnet_service_endpoints = {}
 use_for_each             = true
 subnet_private_endpoint_network_policies_enabled = {
-  aks-mgmt-sbnt = false
-  aks-pool-sbnt = false
+  aks-mgmt-sbnt  = false
+  aks-pool-sbnt  = false
   bastion-subnet = false
-  acr-subnet = false
+  acr-subnet     = false
 }
 
 vnet_tags = {
-  environment = "sandbox"
-  product_family = "dso"
+  environment     = "sandbox"
+  product_family  = "dso"
   product_service = "net"
-  location = "eastus"
+  location        = "eastus"
 }
 
 resource_group_tags = {
-  environment = "sandbox"
-  product_family = "dso"
+  environment     = "sandbox"
+  product_family  = "dso"
   product_service = "net"
-  location = "eastus"
+  location        = "eastus"
 }
