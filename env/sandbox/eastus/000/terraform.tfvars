@@ -6,8 +6,8 @@ location                = "eastus"
 
 //Variables for networking module
 address_space            = ["10.16.0.0/16"]
-subnet_names             = ["aks-mgmt-sbnt", "aks-pool-sbnt", "bastion-subnet", "acr-subnet"]
-subnet_prefixes          = ["10.16.0.0/24", "10.16.1.0/24", "10.16.2.0/24", "10.16.3.0/24"]
+subnet_names             = ["aks-mgmt-sbnt", "aks-pool-sbnt", "bastion-subnet", "acr-subnet", "AzureFirewallSubnet"]
+subnet_prefixes          = ["10.16.0.0/24", "10.16.1.0/24", "10.16.2.0/24", "10.16.3.0/24", "10.16.4.0/24"]
 bgp_community            = null
 ddos_protection_plan     = null
 dns_servers              = []
@@ -21,6 +21,7 @@ subnet_private_endpoint_network_policies_enabled = {
   aks-pool-sbnt  = false
   bastion-subnet = false
   acr-subnet     = false
+  AzureFirewallSubnet = false
 }
 
 vnet_tags = {
